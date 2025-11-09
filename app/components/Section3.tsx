@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -220,9 +221,12 @@ const Section3 = () => {
                 className="w-full h-[20em] bg-white shadow-2xl flex flex-col overflow-hidden rounded-xl transition-all duration-300"
               >
                 <div className="w-full h-[50%] overflow-hidden">
-                  <img
+                  <Image
                     src={house.img}
                     alt="house"
+                    width={100}
+                    height={100}
+                    priority
                     className="w-full h-full object-cover hover:scale-105 transition-all duration-300"
                   />
                 </div>
